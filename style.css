@@ -1,0 +1,76 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.9;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.input-section {
+  margin-bottom: 10px;
+}
+
+.menu label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0px none;
+  padding: 3px 5px;
+  opacity: 0.9;
+  font-size: 12px;
+}
+
+.board {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.cell {
+  flex: 1;
+  background: #000000;
+  border: 0px none;
+  border-right: 1px solid #4f4f4f;
+  border-bottom: 1px solid #4f4f4f;
+  box-sizing: border-box;
+}
+
+.cell.alive {
+  background: #00ff00;
+}
+
+input[type="button"] {
+  margin-top: 5px;
+}

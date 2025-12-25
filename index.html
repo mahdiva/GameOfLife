@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="container">
+      <div class="board"></div>
+      <div class="menu">
+        <div class="input-section">
+          <label for="rows">Box size (px):</label>
+          <input type="number" id="boxSize" min="10" max="500" value="20" />
+        </div>
+        <div class="input-section">
+          <label for="rows">Period (ms):</label>
+          <input type="number" id="period" min="100" value="1000" />
+        </div>
+        <div class="input-section">
+          <input type="button" id="apply" value="Apply" />
+          <input type="button" id="next" value="Next" />
+          <input type="button" id="start" value="Start" />
+          <input type="button" id="stop" value="Stop" />
+          <input type="button" id="clear" value="Clear" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
